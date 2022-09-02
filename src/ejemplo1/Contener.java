@@ -133,12 +133,16 @@ public class Contener extends javax.swing.JFrame {
 
     private void numeroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_numeroKeyTyped
         // TODO add your handling code here:
-        int key= evt.getKeyChar();
-        boolean num_entrada = key >=48 && key <= 57 || key == 45;
-        if (!num_entrada)
-        {
+       // int key= evt.getKeyChar();
+       // boolean num_entrada = key >=48 && key <= 57 || key == 45;
+        //if (!num_entrada)
+       // {
+         //   evt.consume();
+        //}
+        if (!Character.isDigit(evt.getKeyChar())){
             evt.consume();
         }
+        
     }//GEN-LAST:event_numeroKeyTyped
 
     /**
