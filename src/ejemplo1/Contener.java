@@ -51,7 +51,17 @@ public class Contener extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
+        jButton1.setBackground(new java.awt.Color(241, 196, 15));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Agregar");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton1MouseExited(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -64,7 +74,17 @@ public class Contener extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1);
 
+        jButton2.setBackground(new java.awt.Color(52, 152, 219));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Mostrar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton2MouseExited(evt);
+            }
+        });
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -72,7 +92,17 @@ public class Contener extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
 
+        jButton3.setBackground(new java.awt.Color(231, 76, 60));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Ordenar");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton3MouseExited(evt);
+            }
+        });
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -82,6 +112,7 @@ public class Contener extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_END);
 
+        jlbl.setBackground(new java.awt.Color(68, 98, 128));
         jlbl.add(resultado);
 
         getContentPane().add(jlbl, java.awt.BorderLayout.CENTER);
@@ -144,6 +175,42 @@ public class Contener extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_numeroKeyTyped
+
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+        // TODO add your handling code here:
+        jButton1.setBackground(new java.awt.Color(41, 128, 185));
+        jButton1.setForeground(new java.awt.Color(155, 89, 182));
+    }//GEN-LAST:event_jButton1MouseEntered
+
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        // TODO add your handling code here:
+        jButton1.setBackground(new java.awt.Color(241, 196, 15)); 
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jButton1MouseExited
+
+    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
+        // TODO add your handling code here:
+        jButton2.setBackground(new java.awt.Color(46, 204, 113));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jButton2MouseEntered
+
+    private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
+        // TODO add your handling code here:
+        jButton2.setBackground(new java.awt.Color(52, 152, 219));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jButton2MouseExited
+
+    private void jButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseEntered
+        // TODO add your handling code here:
+        jButton3.setBackground(new java.awt.Color(142, 68, 173));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jButton3MouseEntered
+
+    private void jButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseExited
+        // TODO add your handling code here:
+        jButton3.setBackground(new java.awt.Color(231, 76, 60));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_jButton3MouseExited
 
     /**
      * @param args the command line arguments
